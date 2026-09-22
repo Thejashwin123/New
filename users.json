@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "name": "Lakshanya",
+      "email": "lakshanya@example.com",
+      "password": "lakshanya123"
+    },
+    {
+      "name": "Dev",
+      "email": "dev@example.com",
+      "password": "dev123"
+    },
+    {
+      "name": "Tharun_pranav",
+      "email": "tharun_pranav@gmail.com",
+      "password": "tharun_pranav123"
+    },
+    {
+      "name": "Admin",
+      "email": "Admin@example.com",
+      "password": "Admin123"
+    }
+  ]
+}
+// This JSON file contains an array of user objects, each with a name, email, and password. It can be used for user authentication or management in an application.

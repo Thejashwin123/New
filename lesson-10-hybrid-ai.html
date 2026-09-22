@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variational Quantum AI | Edunova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar"><a class="brand" href="index.html"><span
+                    class="brand-mark"><span></span><span></span><span></span></span><span>Qubitly</span></a><a
+                class="lesson-back" href="learn.html">&larr; Back to Learn</a></nav>
+    </header>
+    <main class="lesson-page page-width">
+        <p class="eyebrow">Lesson 10 / Hybrid computing</p>
+        <h1>Variational quantum <em>&amp; AI.</em></h1>
+        <p class="lesson-lead">Hybrid algorithms combine a small quantum circuit with a classical optimizer.</p>
+        <div class="lesson-sections">
+            <section>
+                <h2>The variational loop</h2>
+                <p>A parameterized circuit produces a result. A classical computer scores that result and adjusts the
+                    parameters. The loop repeats until the score improves.</p>
+            </section>
+            <section>
+                <h2>VQE and QAOA</h2>
+                <p>VQE estimates the lowest energy of a molecule. QAOA explores hard optimization problems such as
+                    choosing the best route or schedule.</p>
+            </section>
+            <section>
+                <h2>Why NISQ matters</h2>
+                <p>Current devices have limited, noisy qubits. Hybrid methods keep quantum circuits small and let
+                    classical computers handle the heavier coordination.</p>
+            </section>
+        </div>
+        <div class="lesson-practice"><b>Apply the loop</b>
+            <p>What does the classical optimizer change after each quantum circuit run?</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

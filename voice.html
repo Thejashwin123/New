@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant | Edunova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="voice-page">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="index.html" aria-label="Edunova home"><span class="brand-mark"
+                    aria-hidden="true"><span></span><span></span><span></span></span><span>Edunova</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+            <div class="nav-menu" id="main-menu">
+                <a class="nav-link" href="index.html">Home</a><a class="nav-link" href="learn.html">Learn</a><a
+                    class="nav-link" href="playground.html">Quantum Playground</a><a class="nav-link"
+                    href="tutor.html">AI Tutor</a><a class="nav-link active" href="voice.html" aria-current="page">Voice
+                    Assistant</a><a class="profile-link" href="profile.html"><span class="profile-avatar"
+                        aria-hidden="true">A</span><span>Profile</span></a>
+            </div>
+        </nav>
+    </header>
+    <main class="voice-main page-width">
+        <section class="voice-heading">
+            <p class="eyebrow">Hands-free learning</p>
+            <h1>Speak your <em>question.</em></h1>
+            <p class="hero-copy">Ask about any quantum topic and Edunova will listen, explain, and read the answer back
+                to you.</p>
+        </section>
+        <section class="voice-console" aria-label="Voice assistant">
+            <div class="voice-orb" id="voice-orb"><span class="voice-ring ring-one"></span><span
+                    class="voice-ring ring-two"></span><span class="voice-mic">&#9835;</span></div>
+            <p class="voice-status" id="voice-status" aria-live="polite">Press the microphone and start speaking.</p>
+            <button class="voice-button" id="voice-button" type="button"><span>&#9835;</span> Start listening</button>
+            <p class="voice-transcript" id="voice-transcript">Your question will appear here.</p>
+            <div class="voice-answer" id="voice-answer" aria-live="polite"><span>Edunova voice tutor</span>
+                <p>Try asking: “What is superposition?”</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

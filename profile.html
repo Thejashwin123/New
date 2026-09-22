@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Edunova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation"><a class="brand" href="index.html"
+                aria-label="Qubitly home"><span class="brand-mark"
+                    aria-hidden="true"><span></span><span></span><span></span></span><span>Qubitly</span></a><button
+                class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+            <div class="nav-menu" id="main-menu"><a class="nav-link" href="index.html">Home</a><a class="nav-link"
+                    href="learn.html">Learn</a><a class="nav-link" href="playground.html">Quantum Playground</a><a
+                    class="nav-link" href="tutor.html">AI Tutor</a><a class="profile-link active" href="profile.html"
+                    aria-current="page"><span class="profile-avatar" aria-hidden="true">A</span><span>Profile</span></a>
+            </div>
+        </nav>
+    </header>
+    <main class="page-width tab-page">
+        <p class="eyebrow">Your learning profile</p>
+        <h1>Keep your <em>momentum.</em></h1>
+        <p class="hero-copy">A quick look at your progress, practice rhythm, and next milestone.</p>
+        <div class="profile-summary">
+            <div class="large-avatar" data-user-initial>A</div>
+            <div>
+                <h2><span data-user-name>Alex</span>'s quantum journey</h2>
+                <p><span data-user-email>Log in to view your email</span> · 07 day streak · 14 lessons completed</p>
+            </div>
+            <div class="profile-actions"><a class="button button-primary" href="learn.html">Continue learning
+                    <span>&#8594;</span></a><button class="logout-button" id="logout-button" type="button">Log
+                    out</button></div>
+        </div>
+        <section class="theme-settings">
+            <div>
+                <p class="section-kicker">Appearance</p>
+                <h2>Choose your theme</h2>
+                <p>Switch between a bright study space and a focused dark mode.</p>
+            </div>
+            <div class="theme-toggle" role="group" aria-label="Theme selection"><button id="light-theme"
+                    type="button">Light</button><button id="dark-theme" type="button">Dark</button></div>
+        </section>
+        <section class="language-settings">
+            <div>
+                <p class="section-kicker">Language</p>
+                <h2>Choose your language</h2>
+                <p>Select the language you prefer for your learning experience.</p>
+            </div><label class="language-select" for="language-choice"><span class="sr-only">Choose
+                    language</span><select id="language-choice">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="ta">தமிழ்</option>
+                </select></label>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

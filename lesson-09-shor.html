@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shor's Algorithm | Edunova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar"><a class="brand" href="index.html"><span
+                    class="brand-mark"><span></span><span></span><span></span></span><span>Qubitly</span></a><a
+                class="lesson-back" href="learn.html">&larr; Back to Learn</a></nav>
+    </header>
+    <main class="lesson-page page-width">
+        <p class="eyebrow">Lesson 09 / Factoring</p>
+        <h1>Shor's <em>algorithm.</em></h1>
+        <p class="lesson-lead">Shor's algorithm uses quantum period finding to factor large composite numbers.</p>
+        <div class="lesson-sections">
+            <section>
+                <h2>The classical problem</h2>
+                <p>Multiplying two large primes is easy, but finding those primes from their product is difficult for
+                    classical computers. RSA relies on this asymmetry.</p>
+            </section>
+            <section>
+                <h2>Quantum order-finding</h2>
+                <p>The quantum part uses QPE and the QFT to find the period of a modular function. That period can
+                    reveal factors through a classical calculation.</p>
+            </section>
+            <section>
+                <h2>Hybrid workflow</h2>
+                <p>A practical run alternates quantum sampling with classical post-processing. Large fault-tolerant
+                    machines would be needed to threaten real RSA keys.</p>
+            </section>
+        </div>
+        <div class="lesson-practice"><b>Trace the workflow</b>
+            <p>Which part of Shor's algorithm finds the period, and which part uses that result to calculate factors?
+            </p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

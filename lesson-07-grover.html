@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grover's Algorithm | Edunova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar"><a class="brand" href="index.html"><span
+                    class="brand-mark"><span></span><span></span><span></span></span><span>Qubitly</span></a><a
+                class="lesson-back" href="learn.html">&larr; Back to Learn</a></nav>
+    </header>
+    <main class="lesson-page page-width">
+        <p class="eyebrow">Lesson 07 / Search</p>
+        <h1>Grover's <em>search.</em></h1>
+        <p class="lesson-lead">Grover's algorithm finds a marked item in an unstructured list in about O(&#8730;N)
+            queries.</p>
+        <div class="lesson-sections">
+            <section>
+                <h2>Start with possibilities</h2>
+                <p>Put the search register into an equal superposition so every item has a chance to be selected.</p>
+            </section>
+            <section>
+                <h2>Oracle and diffusion</h2>
+                <p>The oracle marks the correct answer by changing its phase. The diffusion operator then reflects
+                    amplitudes around their average, increasing the marked answer's probability.</p>
+            </section>
+            <section>
+                <h2>Why it helps</h2>
+                <p>After roughly the square root of N iterations, measuring the register is likely to return the target.
+                    More iterations can reduce the success probability again.</p>
+            </section>
+        </div>
+        <div class="lesson-practice"><b>Use the formula</b>
+            <p>For a list of 100 items, is the quantum search closer to 100 or 10 oracle calls?</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

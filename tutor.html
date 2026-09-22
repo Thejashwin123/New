@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tutor | Edunova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation"><a class="brand" href="index.html"
+                aria-label="Qubitly home"><span class="brand-mark"
+                    aria-hidden="true"><span></span><span></span><span></span></span><span>Qubitly</span></a><button
+                class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+            <div class="nav-menu" id="main-menu"><a class="nav-link" href="index.html">Home</a><a class="nav-link"
+                    href="learn.html">Learn</a><a class="nav-link" href="playground.html">Quantum Playground</a><a
+                    class="nav-link active" href="tutor.html" aria-current="page">AI Tutor</a><a class="profile-link"
+                    href="profile.html"><span class="profile-avatar" aria-hidden="true">A</span><span>Profile</span></a>
+            </div>
+        </nav>
+    </header>
+    <main class="page-width tab-page tutor-page">
+        <p class="eyebrow">Your quantum copilot</p>
+        <h1>Ask better <em>questions.</em></h1>
+        <p class="hero-copy">Ask about any topic from the Learn page and get a simple explanation immediately.</p>
+        <div class="tutor-page-box">
+            <div class="chat-bubble tutor-bubble">Hi there. Ask me about any of the ten quantum topics below.</div>
+            <div class="topic-prompts" aria-label="Learn topics"><button type="button"
+                    data-topic="qubits">Qubits</button><button type="button" data-topic="gates">Single-qubit
+                    gates</button><button type="button" data-topic="entanglement">Entanglement</button><button
+                    type="button" data-topic="circuits">Quantum circuits</button><button type="button"
+                    data-topic="interference">Phase &amp; interference</button><button type="button"
+                    data-topic="foundations">Foundational algorithms</button><button type="button"
+                    data-topic="grover">Grover's search</button><button type="button" data-topic="qft">QFT &amp; phase
+                    estimation</button><button type="button" data-topic="shor">Shor's algorithm</button><button
+                    type="button" data-topic="hybrid">VQE &amp; hybrid AI</button></div>
+            <div class="tutor-response" id="tutor-response" aria-live="polite"><span class="response-label">Tutor
+                    explanation</span>
+                <p>Choose a topic or ask a question to see an easy explanation here.</p>
+            </div>
+            <form class="tutor-form" id="tutor-form"><label class="sr-only" for="tutor-question">Ask your AI
+                    Tutor</label><input id="tutor-question" type="text"
+                    placeholder="Example: What is Grover's algorithm?"><button type="submit"
+                    aria-label="Send question">&#8599;</button></form>
+            <div class="prompt-status" id="prompt-status" aria-live="polite">Your tutor knows all ten Learn topics.
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

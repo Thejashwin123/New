@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in | Edunova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+    <main class="login-layout">
+        <section class="login-intro">
+            <a class="brand login-brand" href="index.html" aria-label="Edunova home">
+                <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span>Edunova</span>
+            </a>
+            <div class="login-message">
+                <p class="eyebrow">Welcome back</p>
+                <h1>Keep learning.<br><em>Keep exploring.</em></h1>
+                <p>Return to your quantum journey and pick up exactly where you left off.</p>
+            </div>
+            <div class="login-orbit" aria-hidden="true"><span></span><span></span><i>|0&#10217;</i></div>
+        </section>
+
+        <section class="login-card" aria-labelledby="login-title">
+            <div class="login-card-heading">
+                <p class="section-kicker">Your learning space</p>
+                <h2 id="login-title">Log in to Edunova</h2>
+                <p>Enter your details to continue.</p>
+            </div>
+            <form id="login-form" novalidate>
+                <label for="login-email">Email address</label>
+                <input id="login-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"
+                    required>
+                <div class="password-label"><label for="login-password">Password</label><a href="#login-form"
+                        id="forgot-password">Forgot password?</a></div>
+                <div class="password-field"><input id="login-password" name="password" type="password"
+                        autocomplete="current-password" placeholder="Enter your password" required><button
+                        id="toggle-password" type="button" aria-label="Show password">Show</button></div>
+                <label class="remember-option"><input type="checkbox" id="remember-me"> <span>Remember me</span></label>
+                <button class="login-submit" type="submit">Log in <span aria-hidden="true">&#8594;</span></button>
+                <p class="login-status" id="login-status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="#home" aria-label="Edunova home">
+                <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span>Edunova</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                aria-label="Open navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-menu" id="main-menu">
+                <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                <a class="nav-link" href="learn.html">Learn</a>
+                <a class="nav-link" href="playground.html">Quantum Playground</a>
+                <a class="nav-link" href="tutor.html">AI Tutor</a>
+                <a class="nav-link" href="voice.html">Voice Assistant</a>
+                <a class="profile-link" href="profile.html">
+                    <span class="profile-avatar" aria-hidden="true">A</span>
+                    <span>Profile</span>
+                </a>
+                <a class="login-nav-link" href="login.html">Log in</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home" class="tab-panel active-panel">
+        <section class="hero page-width">
+            <div class="hero-content">
+                <p class="eyebrow">A clearer way into quantum</p>
+                <h1>Master quantum computing with <em>real-time AI guidance.</em></h1>
+                <p class="hero-copy">Build intuition, run circuits, and learn at your own pace in one curious little
+                    quantum lab.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="learn.html">Start Learning <span
+                            aria-hidden="true">&#8594;</span></a>
+                    <a class="button button-secondary" href="playground.html"><span class="play-icon"
+                            aria-hidden="true">&#9654;</span> Open Playground</a>
+                </div>
+                <div class="hero-note"><span class="status-dot"></span> 12,480 learners exploring today</div>
+            </div>
+            <div class="qubit-stage" aria-label="Animated qubit visualization">
+                <div class="stage-label label-top">QUBIT 01 <span>LIVE</span></div>
+                <div class="bloch-sphere">
+                    <div class="sphere-glow"></div>
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="axis axis-x"></div>
+                    <div class="axis axis-y"></div>
+                    <div class="qubit-core"><span>|0&#10217;</span><small>42%</small></div>
+                </div>
+                <div class="stage-label label-bottom"><span class="pulse-line"></span> SUPERPOSITION
+                    <strong>0.707</strong></div>
+            </div>
+        </section>
+
+        <section class="quick-grid page-width" aria-label="Quick learning tools">
+            <article class="tutor-panel">
+                <div class="panel-heading">
+                    <div class="icon-badge coral">✦</div>
+                    <div>
+                        <p class="section-kicker">AI tutor</p>
+                        <h2>Ask anything quantum.</h2>
+                    </div>
+                </div>
+                <p>Get unstuck with a patient guide that meets you at your level.</p>
+                <form class="tutor-form" id="tutor-form">
+                    <label class="sr-only" for="tutor-question">Ask a quantum question</label>
+                    <input id="tutor-question" type="text" placeholder="Why can a qubit be 0 and 1?">
+                    <button type="submit" aria-label="Ask AI Tutor">&#8599;</button>
+                </form>
+                <div class="prompt-status" id="prompt-status" aria-live="polite">Try: “Explain entanglement simply”
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

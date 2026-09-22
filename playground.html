@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Playground | Edunova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation"><a class="brand" href="index.html"
+                aria-label="Qubitly home"><span class="brand-mark"
+                    aria-hidden="true"><span></span><span></span><span></span></span><span>Qubitly</span></a><button
+                class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+            <div class="nav-menu" id="main-menu"><a class="nav-link" href="index.html">Home</a><a class="nav-link"
+                    href="learn.html">Learn</a><a class="nav-link active" href="playground.html"
+                    aria-current="page">Quantum Playground</a><a class="nav-link" href="tutor.html">AI Tutor</a><a
+                    class="profile-link" href="profile.html"><span class="profile-avatar"
+                        aria-hidden="true">A</span><span>Profile</span></a></div>
+        </nav>
+    </header>
+    <main class="page-width tab-page">
+        <p class="eyebrow">Quantum playground</p>
+        <h1>Experiment without <em>limits.</em></h1>
+        <p class="hero-copy">Drag gates onto a circuit, measure your qubits, and see the probability distribution change
+            in real time.</p>
+        <div class="circuit-board">
+            <div class="circuit-toolbar"><span>QUBIT CIRCUIT</span><button type="button">+ Add gate</button><button
+                    type="button">Measure</button></div>
+            <div class="wire-row"><span>q₀</span><i></i><b>H</b><i></i><b class="gate-coral">X</b><i></i><i></i></div>
+            <div class="wire-row"><span>q₁</span><i></i><i></i><b class="gate-mint">●</b><i></i><i></i></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

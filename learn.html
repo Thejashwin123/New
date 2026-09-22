@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn | Edunova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation"><a class="brand" href="index.html"
+                aria-label="Qubitly home"><span class="brand-mark"
+                    aria-hidden="true"><span></span><span></span><span></span></span><span>Qubitly</span></a><button
+                class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+                aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+            <div class="nav-menu" id="main-menu"><a class="nav-link" href="index.html">Home</a><a
+                    class="nav-link active" href="learn.html" aria-current="page">Learn</a><a class="nav-link"
+                    href="playground.html">Quantum Playground</a><a class="nav-link" href="tutor.html">AI Tutor</a><a
+                    class="profile-link" href="profile.html"><span class="profile-avatar"
+                        aria-hidden="true">A</span><span>Profile</span></a></div>
+        </nav>
+    </header>
+    <main class="page-width tab-page learn-page">
+        <p class="eyebrow">Learn at your pace</p>
+        <h1>Build your <em>quantum intuition.</em></h1>
+        <p class="hero-copy">Follow a structured path from your first qubit to advanced algorithms, with progress saved
+            along the way.</p>
+        <div class="curriculum-list">
+            <article class="curriculum-item complete"><button class="module-trigger" type="button"
+                    aria-expanded="false"><span class="module-number">01</span><span class="module-content"><span
+                            class="module-heading"><span class="module-title">Introduction to Quantum Mechanics &amp;
+                                Qubits</span><span class="module-toggle">+</span></span><span
+                            class="module-summary">Learn how qubits differ from normal bits and what the symbols <span
+                                class="math">|0&#10217;</span> and <span class="math">|1&#10217;</span>
+                            mean.</span></span></button>
+                <div class="module-explanation">A classical bit is either 0 or 1. A qubit can be in a combination of
+                    both until we measure it. Dirac notation gives these states names, <span
+                        class="math">|0&#10217;</span> and <span class="math">|1&#10217;</span>. Measurement forces the
+                    qubit to choose one result.<a class="lesson-link" href="lesson-01-qubits.html">Open full lesson
+                        <span>&#8594;</span></a></div>
+            </article>
+            <article class="curriculum-item current-lesson"><button class="module-trigger" type="button"
+                    aria-expanded="false"><span class="module-number">02</span><span class="module-content"><span
+                            class="module-heading"><span class="module-title">Single-Qubit Gates &amp;
+                                Superposition</span><span class="module-toggle">+</span></span><span
+                            class="module-summary">See how gates change one qubit and how a qubit can hold more than one
+                            possibility.</span></span></button>
+                <div class="module-explanation">Quantum gates change a qubit’s state. The Hadamard gate creates an even
+                    blend of 0 and 1, while the Pauli gates flip or rotate the state. The Bloch Sphere is a picture that
+                    helps us see these changes.<a class="lesson-link" href="lesson-02-gates.html">Open full lesson
+                        <span>&#8594;</span></a></div>
+                <div class="module-progress"><span></span></div>
+            </article>
+            <article class="curriculum-item"><button class="module-trigger" type="button" aria-expanded="false"><span
+                        class="module-number">03</span><span class="module-content"><span class="module-heading"><span
+                                class="module-title">Multi-Qubit Systems &amp; Quantum Entanglement</span><span
+                                class="module-toggle">+</span></span><span class="module-summary">Discover how two or
+                            more qubits work together and share a connected state.</span></span></button>
+                <div class="module-explanation">When qubits work together, their states combine using a tensor product.
+                    Entangled qubits behave like one connected system, even when separated. A CNOT gate is a common way
+                    to create this connection.<a class="lesson-link" href="lesson-03-entanglement.html">Open full lesson
+                        <span>&#8594;</span></a></div>
+            </article>
+            <article class="curriculum-item"><button class="module-trigger" type="button" aria-expanded="false"><span
+                        class="module-number">04</span><span class="module-content"><span class="module-heading"><span
+                                class="module-title">Quantum Circuits &amp; Reversible Logic</span><span
+                                class="module-toggle">+</span></span><span class="module-summary">Read quantum circuit
+                            diagrams and learn why quantum operations must be reversible.</span></span></button>
+                <div class="module-explanation">A quantum circuit is a recipe: wires represent qubits and symbols
+                    represent gates. Quantum operations must be reversible, so the information in a state cannot simply
+                    be erased before measurement.<a class="lesson-link" href="lesson-04-circuits.html">Open full lesson
+                        <span>&#8594;</span></a></div>
+            </article>
+            <article class="curriculum-item"><button class="module-trigger" type="button" aria-expanded="false"><span
+                        class="module-number">05</span><span class="module-content"><span class="module-heading"><span
+                                class="module-title">Quantum Phase &amp; Interference</span><span
+                                class="module-toggle">+</span></span><span class="module-summary">Understand how quantum
+                            waves combine, strengthen, or cancel each other out.</span></span></button>
+                <div class="module-explanation">Phase is like the timing of a wave. Waves that line up become stronger,
+                    while waves that oppose each other cancel out. Quantum algorithms use this interference to make
+                    useful answers more likely.<a class="lesson-link" href="lesson-05-interference.html">Open full
+                        lesson <span>&#8594;</span></a></div>
+            </article>
+            <article class="curriculum-item"><button class="module-trigger" type="button" aria-expanded="false"><span
+                        class="module-number">06</span><span class="module-content"><span class="module-heading"><span
+                                class="module-title">Foundational Quantum Algorithms</span><span
+                                class="module-toggle">+</span></span><span class="module-summary">See how early quantum
+                            algorithms solve special problems with fewer questions.</span></span></button>
+                <div class="module-explanation">These early algorithms show how a quantum computer can answer certain
+                    structured questions with fewer checks than a classical computer, sometimes solving them in a single
+                    query.<a class="lesson-link" href="lesson-06-foundations.html">Open full lesson
+                        <span>&#8594;</span></a></div>
+            </article>
+            <article class="curriculum-item"><button class="module-trigger" type="button" aria-expanded="false"><span
+                        class="module-number">07</span><span class="module-content"><span class="module-heading"><span
+                                class="module-title">Quantum Search &amp; Amplitude Amplification</span><span
+                                class="module-toggle">+</span></span><span class="module-summary">Learn how Grover’s
+                            algorithm makes the correct answer more likely in a large list.</span></span></button>
+                <div class="module-explanation">Grover’s algorithm repeatedly increases the probability of the correct
+                    item and reduces the others. It can search an unstructured list of N items in about the square root
+                    of N steps.<a class="lesson-link" href="lesson-07-grover.html">Open full lesson
+                        <span>&#8594;</span></a></div>
+            </article>
+            <article class="curriculum-item"><button class="module-trigger" type="button" aria-expanded="false"><span
+                        class="module-number">08</span><span class="module-content"><span class="module-heading"><span
+                                class="module-title">Quantum Phase Estimation &amp; Fourier Transform</span><span
+                                class="module-toggle">+</span></span><span class="module-summary">Find hidden repeating
+                            patterns and measure the phase of a quantum state.</span></span></button>
+                <div class="module-explanation">The Quantum Fourier Transform finds repeating patterns in a quantum
+                    state. Phase Estimation uses those patterns to measure hidden phase values, which are useful in many
+                    advanced algorithms.<a class="lesson-link" href="lesson-08-qft.html">Open full lesson
+                        <span>&#8594;</span></a></div>
+            </article>
+            <article class="curriculum-item"><button class="module-trigger" type="button" aria-expanded="false"><span
+                        class="module-number">09</span><span class="module-content"><span class="module-heading"><span
+                                class="module-title">Shor's Factoring Algorithm</span><span
+                                class="module-toggle">+</span></span><span class="module-summary">Learn how quantum
+                            period-finding can factor large numbers and challenge RSA encryption.</span></span></button>
+                <div class="module-explanation">Shor’s algorithm turns factoring into a period-finding problem. A
+                    quantum computer finds the period, then a classical computer finishes the calculation. Large-scale
+                    versions could threaten RSA encryption.<a class="lesson-link" href="lesson-09-shor.html">Open full
+                        lesson <span>&#8594;</span></a></div>
+            </article>
+            <article class="curriculum-item"><button class="module-trigger" type="button" aria-expanded="false"><span
+                        class="module-number">10</span><span class="module-content"><span class="module-heading"><span
+                                class="module-title">Variational Quantum &amp; Hybrid AI Algorithms</span><span
+                                class="module-toggle">+</span></span><span class="module-summary">Combine small quantum
+                            circuits with classical computers and machine learning.</span></span></button>
+                <div class="module-explanation">Variational algorithms let a classical computer adjust a small quantum
+                    circuit again and again. VQE can estimate molecular energies, QAOA can explore optimization
+                    problems, and both can work alongside machine learning.<a class="lesson-link"
+                        href="lesson-10-hybrid-ai.html">Open full lesson <span>&#8594;</span></a></div>
+            </article>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
